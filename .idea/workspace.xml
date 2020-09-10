@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f51cc299-00f5-4fad-acd0-843fc3e2bbc8" name="Default Changelist" comment="" />
+    <list default="true" id="f51cc299-00f5-4fad-acd0-843fc3e2bbc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NoteBookPro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NoteBookPro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/_footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,34 +26,148 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hESuOoyu18QfBPRJeBnn5wVaEL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/includes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/includes" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/templates/includes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="疯狂练习" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NoteBookPro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../疯狂练习.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NoteBookPro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/forms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NoteBookPro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NoteBookPro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.疯狂练习" />
+        <item itemvalue="Python.forms" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,17 +181,61 @@
       <updated>1599574979866</updated>
       <workItem from="1599574981785" duration="110000" />
       <workItem from="1599575339541" duration="2746000" />
-      <workItem from="1599650636435" duration="3213000" />
+      <workItem from="1599650636435" duration="8845000" />
+      <workItem from="1599661118244" duration="4309000" />
+      <workItem from="1599666626849" duration="173000" />
+      <workItem from="1599667657474" duration="24673000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="27" y="51" key="SettingsEditor" timestamp="1599652330590">
+    <state x="27" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599657493628">
       <screen x="27" y="23" width="1253" height="777" />
     </state>
-    <state x="27" y="51" key="SettingsEditor/27.23.1253.777@27.23.1253.777" timestamp="1599652330590" />
+    <state x="27" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/27.23.1253.777@27.23.1253.777" timestamp="1599657493628" />
+    <state x="238" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599661408960">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state x="238" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/27.23.1253.777@27.23.1253.777" timestamp="1599661408960" />
+    <state x="78" y="23" key="CommitChangelistDialog2" timestamp="1599662254698">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state x="78" y="23" key="CommitChangelistDialog2/27.23.1253.777@27.23.1253.777" timestamp="1599662254698" />
+    <state width="1131" height="162" key="GridCell.Tab.0.bottom" timestamp="1599750087471">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state width="1131" height="162" key="GridCell.Tab.0.bottom/27.23.1253.777@27.23.1253.777" timestamp="1599750087471" />
+    <state width="1131" height="162" key="GridCell.Tab.0.center" timestamp="1599750087470">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state width="1131" height="162" key="GridCell.Tab.0.center/27.23.1253.777@27.23.1253.777" timestamp="1599750087470" />
+    <state width="1131" height="162" key="GridCell.Tab.0.left" timestamp="1599750087469">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state width="1131" height="162" key="GridCell.Tab.0.left/27.23.1253.777@27.23.1253.777" timestamp="1599750087469" />
+    <state width="1131" height="162" key="GridCell.Tab.0.right" timestamp="1599750087470">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state width="1131" height="162" key="GridCell.Tab.0.right/27.23.1253.777@27.23.1253.777" timestamp="1599750087470" />
+    <state x="319" y="92" key="RollbackChangesDialog" timestamp="1599664198166">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state x="319" y="92" key="RollbackChangesDialog/27.23.1253.777@27.23.1253.777" timestamp="1599664198166" />
+    <state x="204" y="78" key="SettingsEditor" timestamp="1599667698190">
+      <screen x="27" y="23" width="1253" height="777" />
+    </state>
+    <state x="204" y="78" key="SettingsEditor/27.23.1253.777@27.23.1253.777" timestamp="1599667698190" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NoteBookPro$manage.coverage" NAME="manage Coverage Results" MODIFIED="1599749957947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NoteBookPro$.coverage" NAME="疯狂练习 Coverage Results" MODIFIED="1599730103113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/NoteBookPro$test.coverage" NAME="test Coverage Results" MODIFIED="1599745838232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NoteBookPro$forms.coverage" NAME="forms Coverage Results" MODIFIED="1599662466516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

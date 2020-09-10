@@ -1,6 +1,7 @@
+from datetime import datetime
+
 import pymysql
 import traceback  # 错误跟踪模块
-import sys
 
 class MysqlUtil(object):
     def __init__(self):
@@ -16,8 +17,11 @@ class MysqlUtil(object):
 
     # 将错误日志输入到目录文件中
     def log2file(self):
-        f = open('\log.txt','a')
+        f = open('log.txt','a')
+        # f.write(datetime.now())
+        f.write(str(datetime.now())+'\n')
         traceback.print_exc(file=f)
+        traceback.print_exc()
         f.flush() # 强行写入
         f.close()
 
@@ -48,11 +52,29 @@ class MysqlUtil(object):
         try:
             self.cursor.execute(sql)
             result = self.cursor.fetchone()
+
         except:
             self.log2file()
             self.db.rollback()
         finally:
             self.db.close()
+        return result
+
+    def fetchall(self,sql):
+        '''
+        查询数据库：多个结果集
+        fetchall():接受全部的返回结果
+        :return:
+        '''
+        try:
+            self.cursor.execute(sql)
+            result = self.cursor.fetchall()
+        except:
+            self.log2file()
+            self.db.rollback()
+        finally:
+            self.db.close()
+        return result
 
     def update(self, sql):
         '''
@@ -67,3 +89,17 @@ class MysqlUtil(object):
         finally:
             self.db.close()
 
+    def delete(self,sql):
+        '''
+        删除结果集
+        :param sql:
+        :return:
+        '''
+        try:
+            self.cursor.execute(sql)
+            self.db.commit()
+        except:
+            self.log2file()
+            self.db.rollback()
+        finally:
+            self.db.close()

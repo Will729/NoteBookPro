@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>笔记管理器</title>
+
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src='/static/jQuery compress.js' charset="UTF-8"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.js" charset="UTF-8"></script>
+</head>
+<body>
+
+{% include 'includes/_navbar.html' %}
+
+<div class="container">
+    {% include 'includes/_messages.html' %}
+    {% block body %}{% endblock %}
+</div>
+{% include 'includes/_footer.html' %}
+</body>
+</html>
