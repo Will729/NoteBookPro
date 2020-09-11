@@ -250,3 +250,486 @@ Traceback (most recent call last):
   File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com,tianyi,$5$rounds=535000$KLBovy4qrEyDUOJ0$5xCsTG5eqyN/P.U5Dv2J1Txy7.hKGvP' at line 1")
+2020-09-11 20:08:58.319508
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:12:45.501592
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:15:20.781330
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:17:37.237002
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.articles' doesn't exist")
+2020-09-11 20:18:40.047088
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.articles' doesn't exist")
+2020-09-11 20:20:19.253974
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.articles' doesn't exist")
+2020-09-11 20:28:24.214787
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.articles' doesn't exist")
+2020-09-11 20:28:43.102945
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.articles' doesn't exist")
+2020-09-11 20:31:17.474375
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'notebook.airticles' doesn't exist")
+2020-09-11 20:33:03.403830
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:37:39.191802
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:40:25.349027
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:41:31.140465
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:43:49.262089
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:43:56.575212
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:44:51.589011
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 70, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:50:00.138781
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:50:21.892005
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:50:58.659361
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 20:52:10.077394
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tianyi' in 'where clause'")
+2020-09-11 23:58:42.318995
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6','8'' at line 1")
+2020-09-11 23:59:00.648443
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2','4'' at line 1")
+2020-09-12 00:07:40.404175
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/mysql_util.py", line 69, in fetchall
+    self.cursor.execute(sql)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/mac/Desktop/MyPyPro/Pro/NoteBookPro/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2,0' at line 1")

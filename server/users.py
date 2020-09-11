@@ -3,6 +3,7 @@ from passlib.hash import sha256_crypt
 
 from forms import RegisterForm
 from mysql_util import MysqlUtil
+from utils.my_decorators import is_login_in
 
 user = Blueprint('user', __name__)
 
@@ -55,11 +56,13 @@ def login():
             password = result.get('password')
             if sha256_crypt.verify(password_candidate,password):
                 # 写入session
-                session['login_in'] = True
+                session['logged_in'] = True
                 session['username'] = username
-                session['email'] = request.form.get('email') #暂时无用，后续涉及修改邮件使用
+                session['email'] = result.get('email') #暂时无用，后续涉及修改邮件使用
+                print(session)
                 flash('登陆成功！', 'success') #闪存信息
-                return redirect(url_for('dashboard')) #跳转到控制台
+                return redirect(url_for('article.dashboard')) #跳转到控制台
+                # return redirect('/dashboard') #跳转到控制台
             else: # 密码错误
                 error = '用户名密码不匹配'
                 return render_template('login.html', error=error)
@@ -68,5 +71,10 @@ def login():
             return render_template('login.html',error=error)
     return render_template('login.html')
 
-
+@user.route('/logout')
+@is_login_in
+def logout():
+    session.clear()
+    flash('您已经注销', 'success')
+    return redirect(url_for('user.login'))
 

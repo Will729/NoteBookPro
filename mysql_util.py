@@ -52,7 +52,6 @@ class MysqlUtil(object):
         try:
             self.cursor.execute(sql)
             result = self.cursor.fetchone()
-
         except:
             self.log2file()
             self.db.rollback()
@@ -68,13 +67,13 @@ class MysqlUtil(object):
         '''
         try:
             self.cursor.execute(sql)
-            result = self.cursor.fetchall()
+            results = self.cursor.fetchall()
         except:
             self.log2file()
             self.db.rollback()
         finally:
             self.db.close()
-        return result
+        return results
 
     def update(self, sql):
         '''
@@ -103,3 +102,21 @@ class MysqlUtil(object):
             self.db.rollback()
         finally:
             self.db.close()
+
+    #获取表中数据数量
+    # def dcount(self,sql):
+    #     '''
+    #     查询数据库：多个结果集
+    #     fetchall():接受全部的返回结果
+    #     :return:
+    #     '''
+    #     try:
+    #         self.cursor.execute(sql)
+    #         results = self.cursor.rowcount()
+    #     except:
+    #         self.log2file()
+    #         self.db.rollback()
+    #     finally:
+    #         self.db.close()
+    #     return results
+

@@ -1,11 +1,9 @@
-from flask import Flask, render_template, flash, redirect, url_for, session, request, logging
-from passlib.hash import sha256_crypt
+from flask import Flask
 
-from mysql_util import MysqlUtil
-from forms import RegisterForm, ArticleForm
-from settings import DebugConfig
+from server.articles import article
 from server.comms import comm
 from server.users import user
+from settings import DebugConfig
 
 
 # 创建应用
@@ -13,6 +11,7 @@ app = Flask(__name__)
 
 app.register_blueprint(comm)
 app.register_blueprint(user)
+app.register_blueprint(article)
 
 
 if __name__ == '__main__':
