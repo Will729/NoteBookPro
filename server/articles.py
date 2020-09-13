@@ -1,5 +1,8 @@
-from flask import Blueprint, session, render_template
+import time
 
+from flask import Blueprint, session, render_template, request, flash, redirect, url_for
+
+from forms import ArticleForm
 from mysql_util import MysqlUtil
 from utils.my_decorators import is_login_in
 
@@ -55,6 +58,40 @@ def page(page):
 
 
     return render_template('dashboard.html', articles=response_data, p_list=p_list)
+
+
+@article.route('/add_article', methods=['GET', 'POST'])
+@is_login_in
+def add_article():
+    form = ArticleForm(request.form)  # 实例化wtforms的ArticleForm 获取请求值然后进行处理
+    if request.method == 'POST' and form.validate():
+        # 如果用户提交表单，并且通过验证
+        title = form.title.data
+        content = form.content.data
+        author = session.get('username')
+        create_date = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+        db = MysqlUtil()
+        sql = 'insert into articles(title,content,author,create_date) values ("%s","%s","%s","%s")' % (title, content, author, create_date)
+        db.insert(sql)
+        flash('创建成功', 'success') #闪存信息
+        return redirect(url_for('article.dashboard')) # 添加成功 跳转回控制台展示
+    return render_template('add_article.html', form=form) #带着参数渲染模板
+
+
+@article.route('/edit_article/<string:id>', methods=['POST'])
+@is_login_in
+def edit_article(id):
+    db = MysqlUtil()
+    fetch_sql = "SELECT * FROM articles WHERE id = '%s' and author = '%s'" % (id,session['username']) # 根据笔记id查找笔记信息
+    article = db.fetchone(fetch_sql) #查找一条记录
+    if not article:
+        flash('ID错误','danger') # 闪存信息
+        return redirect(url_for('article.dashboard'))
+
+    # 获取表单
+
+
+
 
 
 
