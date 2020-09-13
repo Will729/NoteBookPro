@@ -12,7 +12,7 @@ def is_login_in(func):
             return func(*args, **kwargs)
         else:
             flash('无权访问，请先登录','danger')
-            return redirect(url_for('login'))
+            return redirect(url_for('user.login'))
     return inner
 
 # 分页功能
